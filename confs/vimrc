@@ -1,0 +1,24 @@
+"Colors
+colorscheme molokai
+let g:rehash256=1
+syntax enable 
+"Spaces & Tabs
+set backspace=indent,eol,start
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set mouse+=a
+set list
+set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+"UI Config
+set number
+set cursorline
+set wildmenu
+set wildmode=longest:full,full
+set lazyredraw
+set showmatch
+"Plug
+call plug#begin()
+    Plug 'easymotion/vim-easymotion'
+    Plug 'ervandew/supertab'
+call plug#end()
