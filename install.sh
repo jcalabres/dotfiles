@@ -3,7 +3,7 @@
 #--------------------#
 # Check dependencies #
 #--------------------#
-deps=("zsh" "vim" "chunkwm" "skhd")
+deps=("zsh" "vim")
 for dep in $deps 
 do 
     if ! [ -x "$(command -v $dep)" ]; then
@@ -30,13 +30,14 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 #--------------------#
 ln -sf "$PWD/confs/vimrc" "$HOME/.vimrc"
 ln -sf "$PWD/confs/zshrc" "$HOME/.zshrc"
+ln -sF "$PWD/confs/hyper" "$HOME/.hyper.js"
 
 #--------------------#
 # Symlink themes     #
 #--------------------#
 mkdir -p "$HOME/.vim/colors"
 ln -sf "$PWD/themes/molokai.vim" "$HOME/.vim/colors/molokai.vim"
-ln -sf "$PWD/themes/mymh.zsh-theme" "$HOME/.oh-my-zsh/themes/mymh.zsh-theme"
+ln -sf "$PWD/themes/mymh.zsh-theme" "$HOME/.oh-my-zsh/themes/custom_mh.zsh-theme"
 
 #--------------------#
 # Postinstall confs  #

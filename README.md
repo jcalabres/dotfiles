@@ -2,11 +2,12 @@
 
 * zsh
 * vim
+* hyper
 
 # Installation
 
 ```bash
-git clone https://github.com/syc0de/dotfiles.git ~/.dotfiles
+git clone https://github.com/jcalabres/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles 
 chmod +x install.sh
 ./install.sh

@@ -1,4 +1,4 @@
-# Custom mh theme by zh0kx
+# Custom mh theme by jcalabres
 
 # features:
 # path is autoshortened to ~120 characters

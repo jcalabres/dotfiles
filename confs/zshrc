@@ -12,7 +12,7 @@ alias mount="diskutil mount"
 alias umount="diskutil umountDisk"
 alias server="python -m SimpleHTTPServer"
 
-ZSH_THEME="mymh"
+ZSH_THEME="custom_mh"
 plugins=(git z colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
