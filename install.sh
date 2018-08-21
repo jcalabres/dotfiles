@@ -37,7 +37,7 @@ ln -sF "$PWD/confs/hyper" "$HOME/.hyper.js"
 #--------------------#
 mkdir -p "$HOME/.vim/colors"
 ln -sf "$PWD/themes/molokai.vim" "$HOME/.vim/colors/molokai.vim"
-ln -sf "$PWD/themes/mymh.zsh-theme" "$HOME/.oh-my-zsh/themes/custom_mh.zsh-theme"
+ln -sf "$PWD/themes/custom_mh.zsh-theme" "$HOME/.oh-my-zsh/themes/custom_mh.zsh-theme"
 
 #--------------------#
 # Postinstall confs  #
