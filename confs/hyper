@@ -47,7 +47,7 @@ module.exports = {
       alwaysOnTop: false,
       animate: false,
       hasShadow: false,
-      hideDock: true,
+      hideDock: false,
       hideOnBlur: true,
       hotkeys: ['Option+Space'],
       position: 'top',
@@ -57,7 +57,7 @@ module.exports = {
       startup: true,
       size: 0.5,
       tray: true,
-      unique: true
+      unique: false
     }
 
   },
