@@ -21,4 +21,5 @@ set showmatch
 call plug#begin()
     Plug 'easymotion/vim-easymotion'
     Plug 'ervandew/supertab'
+    Plug 'kelwin/vim-smali'
 call plug#end()

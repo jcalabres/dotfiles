@@ -8,7 +8,7 @@ module.exports = {
     fontWeightBold: 'bold',
     cursorColor: 'rgba(0,0,0,0.8)',
     cursorAccentColor: '#000',
-    cursorShape: 'UNDERLINE',
+    cursorShape: 'BLOCK',
     cursorBlink: true,
     foregroundColor: '#fff',
     backgroundColor: '#000',
@@ -62,10 +62,7 @@ module.exports = {
 
   },
 
-  plugins: [
-    "hyper-corubo",
-    "hyperterm-overlay"
-  ],
+  plugins: ["hyper-corubo", "hyperterm-overlay", "hyperpower"],
 
   localPlugins: [],
   keymaps: {},
