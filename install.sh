@@ -30,7 +30,6 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 #--------------------#
 ln -sf "$PWD/confs/vimrc" "$HOME/.vimrc"
 ln -sf "$PWD/confs/zshrc" "$HOME/.zshrc"
-ln -sF "$PWD/confs/hyper" "$HOME/.hyper.js"
 
 #--------------------#
 # Symlink themes     #
