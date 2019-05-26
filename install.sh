@@ -30,6 +30,10 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 #--------------------#
 ln -sf "$PWD/confs/vimrc" "$HOME/.vimrc"
 ln -sf "$PWD/confs/zshrc" "$HOME/.zshrc"
+# Tell iTerm2 to use the custom preferences in the directory
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+# Specify the preferences directory
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dotfiles/confs/iterm2"
 
 #--------------------#
 # Symlink themes     #

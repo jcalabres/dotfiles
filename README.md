@@ -2,7 +2,7 @@
 
 * zsh
 * vim
-* hyper
+* iTerm2
 
 # Installation
 

@@ -2,7 +2,7 @@
 colorscheme molokai
 let g:rehash256=1
 syntax enable 
-"Spaces & Tabs
+"Spaces & Tabs"
 set backspace=indent,eol,start
 set tabstop=4
 set shiftwidth=4
@@ -10,6 +10,7 @@ set expandtab
 set mouse+=a
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+let mapleader=','
 "UI Config
 set number
 set cursorline
@@ -22,4 +23,5 @@ call plug#begin()
     Plug 'easymotion/vim-easymotion'
     Plug 'ervandew/supertab'
     Plug 'kelwin/vim-smali'
+    Plug 'scrooloose/nerdcommenter'
 call plug#end()
