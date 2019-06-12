@@ -1,16 +1,16 @@
 # Custom mh theme by jcalabres
 
 # features:
-# path is autoshortened to ~120 characters
+# path is autoshortened to ~30 characters
 # displays git status (if applicable in current folder)
-# turns username magenta if superuser, otherwise it is green
+# turns username green if superuser, otherwise it is white
 
-# if superuser make the username magenta else green
-if [ $UID -eq 0 ]; then NCOLOR="magenta"; else NCOLOR="green"; fi
+# if superuser make the username pink
+if [ $UID -eq 0 ]; then NCOLOR="pink"; else NCOLOR="green"; fi
 
 # prompt
-PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}::$fg[red]%}%120<...<%~%<<%{$reset_color%}$(echo $(git_prompt_info)|xargs)%{$reset_color%}%(!.#.$) '
-#RPROMPT='$(git_prompt_info)'
+PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}::%{$fg[red]%}%120<...<%~%<<%{$reset_color%}%(!.#.$) '
+RPROMPT='$(git_prompt_info)'
 
 # git theming
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[gray]%}(%{$fg_no_bold[yellow]%}%B"
