@@ -9,9 +9,10 @@ export DEFAULT_USER=$USER
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+alias python="python3"
+alias pip="pip3"
 alias c="clear"
 alias rm="trash"
-alias services="brew services"
 alias mount="diskutil mount"
 alias umount="diskutil umountDisk"
 alias server="python -m SimpleHTTPServer"
@@ -24,15 +25,6 @@ source $ZSH/oh-my-zsh.sh
 
 function mk(){
     mkdir -p "$@" && cd "$@"
-}
-
-function mkctf(){
-	mkdir exploiting
-	mkdir crypto
-	mkdir web
-	mkdir reversing
-	mkdir foresic
-	mkdir misc		
 }
 
 function manpdf() {
