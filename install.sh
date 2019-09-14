@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Operating System
+os=$(uname)
+
 #--------------------#
 # Check dependencies #
 #--------------------#
@@ -8,7 +11,11 @@ for dep in $deps
 do 
     if ! [ -x "$(command -v $dep)" ]; then
         echo Installing $dep.
-        brew install $dep 
+        if [ $os == "Darwin" ]; then
+            brew install $dep
+        elif [ $os == "Linux" ]; then
+            sudo apt-get install $dep
+        fi
     fi
 done
 
@@ -30,10 +37,13 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 #--------------------#
 ln -sf "$PWD/confs/vimrc" "$HOME/.vimrc"
 ln -sf "$PWD/confs/zshrc" "$HOME/.zshrc"
-# Tell iTerm2 to use the custom preferences in the directory
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
-# Specify the preferences directory
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dotfiles/confs/iterm2"
+
+if [ $os == "Darwin" ]; then
+    # Tell iTerm2 to use the custom preferences in the directory
+    defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+    # Specify the preferences directory
+    defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dotfiles/confs/iterm2"
+fi 
 
 #--------------------#
 # Symlink themes     #

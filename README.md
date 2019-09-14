@@ -1,8 +1,14 @@
-# My dotfiles (macOS)
+# Dotfiles 
+
+My custom configurations and environment.
+
+The installation file is compatible in both macOS and Linux.
+
+# Configurations
 
 * zsh
 * vim
-* iTerm2
+* iTerm2 (only macOS)
 
 # Installation
 
@@ -12,4 +18,3 @@ cd ~/.dotfiles
 chmod +x install.sh
 ./install.sh
 ```
-

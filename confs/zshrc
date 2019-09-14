@@ -13,8 +13,6 @@ alias python="python3"
 alias pip="pip3"
 alias c="clear"
 alias rm="trash"
-alias mount="diskutil mount"
-alias umount="diskutil umountDisk"
 alias server="python -m SimpleHTTPServer"
 
 ZSH_THEME="mh_edit"
@@ -27,6 +25,23 @@ function mk(){
     mkdir -p "$@" && cd "$@"
 }
 
-function manpdf() {
+function man2pdf() {
      man -t "${1}" | /usr/bin/open -f -a /Applications/Preview.app/
+}
+
+function pgkill() {
+    adb shell "for pid in  \`ps  | $1 | sed 's/  */ /g' | \
+     cut -d ' '  -f 2 \`; do kill \$pid; done"
+}
+
+function frida-start() {
+    pgkill "frida" 
+    if [ -n "$1" ]; then frida=$1; else frida="frida-server"; fi
+    adb shell /data/local/tmp/$frida &
+}
+
+function gdb-start() {
+    pgkill "gdb"
+    if [ -n "$2" ]; then gdb=$2; else gdb="gdb-server"; fi
+    adb shell /data/local/tmp/$gdb :9999 --attach $(adb shell pidof -s $1)
 }
