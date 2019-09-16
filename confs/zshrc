@@ -37,11 +37,11 @@ function pgkill() {
 function frida-start() {
     pgkill "frida" 
     if [ -n "$1" ]; then frida=$1; else frida="frida-server"; fi
-    adb shell /data/local/tmp/$frida &
+    adb shell su -c /data/local/tmp/$frida &
 }
 
 function gdb-start() {
     pgkill "gdb"
     if [ -n "$2" ]; then gdb=$2; else gdb="gdb-server"; fi
-    adb shell /data/local/tmp/$gdb :9999 --attach $(adb shell pidof -s $1)
+    adb shell su -c /data/local/tmp/$gdb :9999 --attach $(adb shell pidof -s $1)
 }
