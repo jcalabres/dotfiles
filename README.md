@@ -2,13 +2,14 @@
 
 My custom configurations and environment.
 
-The installation file is compatible in both macOS and Linux.
+The installation is compatible in both macOS and Linux.
 
 # Configurations
 
 * zsh
 * vim
-* iTerm2 (only macOS)
+* iTerm2 
+* macOS SysConf
 
 # Installation
 

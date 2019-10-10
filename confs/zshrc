@@ -1,3 +1,5 @@
+#!/bin/env zsh
+
 export ANDROID_HOME="/Users/$USER/Library/Android/sdk"
 export SCRIPTS="$HOME/Scripts"
 
@@ -9,24 +11,45 @@ export DEFAULT_USER=$USER
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+<<<<<<< HEAD
 eval $(thefuck --alias)
 alias upgrade="brew update && brew upgrade"
+=======
+#--------------------#
+#      ALIASES       #
+#--------------------#
+alias python="python3"
+alias pip="pip3"
+>>>>>>> 891a91a9660ab124f55804eb61f6522a8d631cd7
 alias c="clear"
 alias rm="trash"
 alias server="python -m SimpleHTTPServer"
+alias fiind="find . -name"
 
+#--------------------#
+#    ENVIRONMENT     #
+#--------------------#
 ZSH_THEME="mh_edit"
-plugins=(git z colored-man-pages)
-
+plugins=(git z colored-man-pages common-aliases)
 source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+#--------------------#
+#     UTILITIES      #
+#--------------------#
 function mk(){
     mkdir -p "$@" && cd "$@"
 }
 
 function man2pdf() {
      man -t "${1}" | /usr/bin/open -f -a /Applications/Preview.app/
+}
+
+#--------------------#
+#     ANDROID RE     #
+#--------------------#
+function package(){
+	adb shell su -c pm list packages | grep $1 | cut -d ":" -f 2
 }
 
 function pgkill() {
@@ -37,11 +60,12 @@ function pgkill() {
 function frida-start() {
     pgkill "frida" 
     if [ -n "$1" ]; then frida=$1; else frida="frida-server"; fi
-    adb shell /data/local/tmp/$frida &
+    adb shell "su -c /data/local/tmp/$frida &"
 }
 
 function gdb-start() {
-    pgkill "gdb"
-    if [ -n "$2" ]; then gdb=$2; else gdb="gdb-server"; fi
-    adb shell /data/local/tmp/$gdb :9999 --attach $(adb shell pidof -s $1)
+    pgkill "gdbserver"
+    if [ -n "$2" ]; then gdb=$2; else gdb="gdbserver"; fi
+	pid=$(adb shell su -c pgrep $1)
+	adb shell "su -c /data/local/tmp/$gdb :9999 --attach $pid &"
 }

@@ -6,7 +6,7 @@ syntax enable
 set backspace=indent,eol,start
 set tabstop=4
 set shiftwidth=4
-set expandtab
+"set expandtab"
 set mouse+=a
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
