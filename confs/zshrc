@@ -9,8 +9,8 @@ export DEFAULT_USER=$USER
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-alias python="python3"
-alias pip="pip3"
+eval $(thefuck --alias)
+alias upgrade="brew update && brew upgrade"
 alias c="clear"
 alias rm="trash"
 alias server="python -m SimpleHTTPServer"

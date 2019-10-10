@@ -13,6 +13,7 @@ do
         echo Installing $dep.
         if [ $os == "Darwin" ]; then
             brew install $dep
+            $HOME/.dotfiles/confs/macconf.sh
         elif [ $os == "Linux" ]; then
             sudo apt-get install $dep
         fi
