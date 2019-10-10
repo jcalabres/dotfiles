@@ -11,16 +11,12 @@ export DEFAULT_USER=$USER
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-<<<<<<< HEAD
-eval $(thefuck --alias)
-alias upgrade="brew update && brew upgrade"
-=======
+
 #--------------------#
 #      ALIASES       #
 #--------------------#
-alias python="python3"
-alias pip="pip3"
->>>>>>> 891a91a9660ab124f55804eb61f6522a8d631cd7
+eval $(thefuck --alias)
+alias upgrade="brew update && brew upgrade"
 alias c="clear"
 alias rm="trash"
 alias server="python -m SimpleHTTPServer"
