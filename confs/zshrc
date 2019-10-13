@@ -44,8 +44,13 @@ function man2pdf() {
 #--------------------#
 #     ANDROID RE     #
 #--------------------#
-function package(){
+
+function get-package(){
 	adb shell su -c pm list packages | grep $1 | cut -d ":" -f 2
+}
+
+function set-debuggable() {
+ 	adb shell su -c am set-debug-app -w --persistent $1
 }
 
 function pgkill() {
