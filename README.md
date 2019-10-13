@@ -9,7 +9,8 @@ The installation is compatible in both macOS and Linux.
 * zsh
 * vim
 * iTerm2 
-* macOS SysConf
+* GISTS Scripts
+* macOS Config
 
 # Installation
 

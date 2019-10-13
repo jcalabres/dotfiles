@@ -6,7 +6,7 @@ os=$(uname)
 #--------------------#
 # Check dependencies #
 #--------------------#
-deps=("zsh" "vim")
+deps=("zsh" "vim" "python3")
 for dep in $deps 
 do 
     if ! [ -x "$(command -v $dep)" ]; then
@@ -23,13 +23,13 @@ done
 #--------------------#
 # Install extensions #
 #--------------------#
-# Install FZF
+# FZF
 git clone https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --all > /dev/null 2>&1
-# Install Oh my zsh
+# Oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 touch $HOME/.z
-# Install vim-plug
+# vim-plug
 curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
@@ -54,9 +54,15 @@ ln -sf "$PWD/themes/molokai.vim" "$HOME/.vim/colors/molokai.vim"
 ln -sf "$PWD/themes/mh_edit.zsh-theme" "$HOME/.oh-my-zsh/themes/mh_edit.zsh-theme"
 
 #--------------------#
+# Download Scripts   #
+#--------------------#
+mkdir -p $HOME/Scripts/gists
+python3 $HOME/.dotfiles/confs/getgists.py
+
+#--------------------#
 # Postinstall confs  #
 #--------------------#
-# Install vim plugins
+# vim plugins
 vim +PlugInstall +qall +so %
 # Set zsh default
 chsh -s /bin/zsh

@@ -17,16 +17,16 @@ export LANG=en_US.UTF-8
 #--------------------#
 eval $(thefuck --alias)
 alias upgrade="brew update && brew upgrade"
-alias c="clear"
-alias rm="trash"
 alias server="python -m SimpleHTTPServer"
 alias fiind="find . -name"
+alias rm="trash"
+alias c="clear"
 
 #--------------------#
 #    ENVIRONMENT     #
 #--------------------#
 ZSH_THEME="mh_edit"
-plugins=(git z colored-man-pages common-aliases)
+plugins=(git z colored-man-pages common-aliases safe-rm)
 source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
