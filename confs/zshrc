@@ -1,6 +1,7 @@
 #!/bin/env zsh
 
 export ANDROID_HOME="/Users/$USER/Library/Android/sdk"
+export JAVA_HOME=$(/usr/libexec/java_home)
 export SCRIPTS="$HOME/Scripts"
 
 export PATH="${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
@@ -11,14 +12,13 @@ export DEFAULT_USER=$USER
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-
 #--------------------#
 #      ALIASES       #
 #--------------------#
 eval $(thefuck --alias)
 alias upgrade="brew update && brew upgrade"
 alias server="python -m SimpleHTTPServer"
-alias fiind="find . -name"
+alias fiiind="find . -name"
 alias rm="trash"
 alias c="clear"
 
