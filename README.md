@@ -2,7 +2,7 @@
 
 My custom configurations and environment.
 
-The installation is compatible in bothi, macOS and Linux.
+The installation is compatible in both, macOS and Linux.
 
 # Configurations
 
@@ -10,6 +10,7 @@ The installation is compatible in bothi, macOS and Linux.
 * vim
 * iTerm2
 * GISTS
+* Packgs
 * OS Conf
 
 # Installation
