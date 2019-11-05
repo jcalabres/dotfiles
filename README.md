@@ -2,15 +2,15 @@
 
 My custom configurations and environment.
 
-The installation is compatible in both macOS and Linux.
+The installation is compatible in bothi, macOS and Linux.
 
 # Configurations
 
 * zsh
 * vim
-* iTerm2 
-* GISTS Scripts
-* macOS Config
+* iTerm2
+* GISTS
+* OS Conf
 
 # Installation
 
