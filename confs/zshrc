@@ -24,7 +24,7 @@ alias c="clear"
 #--------------------#
 #    ENVIRONMENT     #
 #--------------------#
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git z colored-man-pages common-aliases)
 source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
