@@ -15,7 +15,6 @@ export LANG=en_US.UTF-8
 #--------------------#
 #      ALIASES       #
 #--------------------#
-eval $(thefuck --alias)
 alias upgrade="brew update && brew upgrade"
 alias server="python -m SimpleHTTPServer"
 alias fiiind="find . -name"
@@ -26,7 +25,7 @@ alias c="clear"
 #    ENVIRONMENT     #
 #--------------------#
 ZSH_THEME="mh_edit"
-plugins=(git z colored-man-pages common-aliases safe-rm)
+plugins=(git z colored-man-pages common-aliases)
 source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -44,7 +43,6 @@ function man2pdf() {
 #--------------------#
 #     ANDROID RE     #
 #--------------------#
-
 function get-package(){
 	adb shell su -c pm list packages | grep $1 | cut -d ":" -f 2
 }
