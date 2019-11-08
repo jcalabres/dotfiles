@@ -24,7 +24,7 @@ alias c="clear"
 #--------------------#
 #    ENVIRONMENT     #
 #--------------------#
-ZSH_THEME="mh_edit"
+ZSH_THEME="agnoster"
 plugins=(git z colored-man-pages common-aliases)
 source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
