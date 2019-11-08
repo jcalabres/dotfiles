@@ -34,6 +34,7 @@ git clone https://github.com/junegunn/fzf.git ~/.fzf
 #--------------------#
 ln -sf "$PWD/confs/vimrc" "$HOME/.vimrc"
 ln -sf "$PWD/confs/zshrc" "$HOME/.zshrc"
+ln -sf "$PWD/confs/p10k.zsh" "$HOME/.p10k.zsh"
 if [ $os == "Darwin" ]; then
     # Tell iTerm2 to use the custom preferences in the directory
     defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
