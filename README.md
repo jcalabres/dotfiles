@@ -1,4 +1,4 @@
-# Dotfiles 
+# Dotfiles
 
 My custom configurations and environment.
 
@@ -10,8 +10,8 @@ The installation is compatible in both, macOS and Linux.
 * vim
 * iTerm2
 * GISTS
-* Packgs
-* OS Conf
+* Packages
+* OS Config
 
 # Installation
 
