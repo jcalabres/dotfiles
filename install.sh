@@ -52,7 +52,7 @@ ln -sf "$PWD/themes/molokai.vim" "$HOME/.vim/colors/molokai.vim"
 # Download Scripts   #
 #--------------------#
 mkdir -p $HOME/Scripts/gists
-python3 $HOME/.dotfiles/confs/getgists.py
+python $HOME/.dotfiles/confs/getgists.py
 
 #--------------------#
 # Postinstall confs  #

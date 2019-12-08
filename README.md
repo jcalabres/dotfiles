@@ -7,11 +7,12 @@ The installation is compatible in both, macOS and Linux.
 # Configurations
 
 * zsh
+* p10k
 * vim
 * iTerm2
-* GISTS
-* Packages
-* OS Config
+* gists
+* packages
+* macOS
 
 # Installation
 
