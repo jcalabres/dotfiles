@@ -2,14 +2,14 @@
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export ANDROID_HOME="/Users/$USER/Library/Android/sdk"
-#export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=$(/usr/libexec/java_home)
 export SCRIPTS="$HOME/Scripts"
 
 export PATH="${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
 export PATH="${PATH}:$SCRIPTS"
 
 export ZSH=$HOME/.oh-my-zsh
-#export DEFAULT_USER=$USER
+export DEFAULT_USER=$USER
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
