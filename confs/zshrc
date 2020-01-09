@@ -18,7 +18,8 @@ export LANG=en_US.UTF-8
 #--------------------#
 alias upgrade="brew update && brew upgrade"
 alias server="python -m SimpleHTTPServer"
-alias fiiind="find . -name"
+alias fnd="find . -name"
+alias emu="$ANDROID_HOME/tools/emulator"
 alias rm="trash"
 alias c="clear"
 
