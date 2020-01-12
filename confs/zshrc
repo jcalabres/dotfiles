@@ -18,9 +18,9 @@ export LANG=en_US.UTF-8
 #--------------------#
 alias upgrade="brew update && brew upgrade"
 alias server="python -m SimpleHTTPServer"
-alias fnd="find . -name"
+alias rfind="find . -name"
+alias remove="rmtrash"
 alias emu="$ANDROID_HOME/tools/emulator"
-alias rm="trash"
 alias c="clear"
 
 #--------------------#
@@ -40,33 +40,4 @@ function mk(){
 
 function man2pdf() {
      man -t "${1}" | /usr/bin/open -f -a /Applications/Preview.app/
-}
-
-#--------------------#
-#     ANDROID RE     #
-#--------------------#
-function get-package(){
-	adb shell su -c pm list packages | grep $1 | cut -d ":" -f 2
-}
-
-function set-debuggable() {
- 	adb shell su -c am set-debug-app -w --persistent $1
-}
-
-function pgkill() {
-    adb shell "for pid in  \`ps  | $1 | sed 's/  */ /g' | \
-     cut -d ' '  -f 2 \`; do kill \$pid; done"
-}
-
-function frida-start() {
-    pgkill "frida" 
-    if [ -n "$1" ]; then frida=$1; else frida="frida-server"; fi
-    adb shell "su -c /data/local/tmp/$frida &"
-}
-
-function gdb-start() {
-    pgkill "gdbserver"
-    if [ -n "$2" ]; then gdb=$2; else gdb="gdbserver"; fi
-	pid=$(adb shell su -c pgrep $1)
-	adb shell "su -c /data/local/tmp/$gdb :9999 --attach $pid &"
 }
