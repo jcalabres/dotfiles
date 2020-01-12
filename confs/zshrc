@@ -5,7 +5,7 @@ export ANDROID_HOME="/Users/$USER/Library/Android/sdk"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export SCRIPTS="$HOME/Scripts"
 
-export PATH="${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
+export PATH="${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/29.0.2"
 export PATH="${PATH}:$SCRIPTS"
 
 export ZSH=$HOME/.oh-my-zsh
