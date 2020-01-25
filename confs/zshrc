@@ -16,10 +16,15 @@ export LANG=en_US.UTF-8
 #--------------------#
 #      ALIASES       #
 #--------------------#
+alias brews="brew leaves"
+alias gitaa="git add ."
+alias gitcm="git commit -m"
+alias gitp="git push"
+alias greep="grep -rin"
+alias fiind="find . -name"
 alias upgrade="brew update && brew upgrade"
 alias server="python -m SimpleHTTPServer"
-alias rfind="find . -name"
-alias remove="rmtrash"
+alias remove="trash"
 alias emu="$ANDROID_HOME/tools/emulator"
 alias c="clear"
 
@@ -27,7 +32,7 @@ alias c="clear"
 #    ENVIRONMENT     #
 #--------------------#
 ZSH_THEME="powerlevel10k/powerlevel10k"
-plugins=(git z colored-man-pages common-aliases)
+plugins=(git z colored-man-pages copyfile)
 source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

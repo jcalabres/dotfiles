@@ -20,8 +20,6 @@ set lazyredraw
 set showmatch
 "Plug
 call plug#begin()
-    Plug 'easymotion/vim-easymotion'
-    Plug 'ervandew/supertab'
     Plug 'kelwin/vim-smali'
     Plug 'scrooloose/nerdcommenter'
 call plug#end()
