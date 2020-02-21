@@ -39,7 +39,7 @@ source $ZSH/oh-my-zsh.sh
 #--------------------#
 #     UTILITIES      #
 #--------------------#
-function mk(){
+function newdir(){
     mkdir -p "$@" && cd "$@"
 }
 
