@@ -120,6 +120,8 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>ASCII Ligatures</key>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -1423,6 +1425,11 @@
 		<string>3.2.9</string>
 		<string>3.3.7</string>
 	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>Hack</string>
+		<string>MesloLGS NF</string>
+	</array>
 	<key>NoSyncConfirmRunOpenFile</key>
 	<true/>
 	<key>NoSyncConfirmRunOpenFile_selection</key>
@@ -1441,7 +1448,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>F91A316E-46DC-40B6-B00F-A99C1BB48171</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>34</integer>
+	<integer>46</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2230,7 +2237,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-25T11:07:28Z</date>
+	<date>2020-02-15T10:17:48Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>

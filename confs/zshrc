@@ -46,3 +46,13 @@ function mk(){
 function man2pdf() {
      man -t "${1}" | /usr/bin/open -f -a /Applications/Preview.app/
 }
+
+function gitignore() {
+	curl -L -s https://www.gitignore.io/api/$1 -o .gitignore;
+}
+
+function gitall(){
+	gitaa
+	gitcm $1
+	gitp
+}
