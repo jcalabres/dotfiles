@@ -17,8 +17,8 @@ export LANG=en_US.UTF-8
 #      ALIASES       #
 #--------------------#
 alias brews="brew leaves"
-alias gitaa="git add ."
-alias gitcm="git commit -m"
+alias gita="git add ."
+alias gitc="git commit -m"
 alias gitp="git push"
 alias greep="grep -rin"
 alias fiind="find . -name"
@@ -52,7 +52,7 @@ function gitignore() {
 }
 
 function gitall(){
-	gitaa
-	gitcm $1
+	gita
+	gitc $1
 	gitp
 }
