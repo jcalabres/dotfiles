@@ -106,7 +106,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>283 436 916 423 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 514 1680 514 0 0 1680 1027 </string>
+	<string>0 1027 1680 497 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>937 111 570 586 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -288,9 +288,9 @@
 			<key>Blinking Cursor</key>
 			<true/>
 			<key>Blur</key>
-			<false/>
+			<true/>
 			<key>Blur Radius</key>
-			<real>0.10000000000000001</real>
+			<real>4.709622858502537</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -749,7 +749,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.099115640862944165</real>
+			<real>0.14207051078680213</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -940,9 +940,9 @@
 			<key>Blinking Cursor</key>
 			<true/>
 			<key>Blur</key>
-			<false/>
+			<true/>
 			<key>Blur Radius</key>
-			<real>0.10000000000000001</real>
+			<real>4.7546815513959384</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1397,7 +1397,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.097973508883248739</real>
+			<real>0.14107114530456846</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -1439,7 +1439,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{249, 898}</string>
+		<string>{244, 528}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -1448,7 +1448,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>F91A316E-46DC-40B6-B00F-A99C1BB48171</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>60</integer>
+	<integer>62</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
