@@ -9,7 +9,7 @@ os=$(uname)
 packages="cat packages.txt"
 if [ $os == "Darwin" ]; then
 	$packages | xargs brew install
-	$HOME/.dotfiles/confs/macconf.sh
+	$HOME/.dotfiles/confs/conf.sh
 elif [ $os == "Linux" ]; then
 	$packages | xargs sudo apt-get install
 fi

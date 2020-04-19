@@ -14,11 +14,11 @@ export LANG=en_US.UTF-8
 #      ALIASES       #
 #--------------------#
 alias brews="brew leaves"
+alias grepr="grep -rin"
+alias findr="find . -name"
 alias gita="git add ."
 alias gitc="git commit -m"
 alias gitp="git push"
-alias grepr="grep -rin"
-alias findr="find . -name"
 alias upgrade="brew update && brew upgrade"
 alias server="python -m SimpleHTTPServer"
 alias remove="trash"
