@@ -20,8 +20,6 @@ fi
 # Oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 touch $HOME/.z
-# Powerlevel10k theme
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 # vim-plug
 curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -34,7 +32,6 @@ git clone https://github.com/junegunn/fzf.git ~/.fzf
 #--------------------#
 ln -sf "$PWD/confs/vimrc" "$HOME/.vimrc"
 ln -sf "$PWD/confs/zshrc" "$HOME/.zshrc"
-ln -sf "$PWD/confs/p10k.zsh" "$HOME/.p10k.zsh"
 if [ $os == "Darwin" ]; then
     # Tell iTerm2 to use the custom preferences in the directory
     defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
@@ -46,13 +43,7 @@ fi
 # Symlink themes     #
 #--------------------#
 mkdir -p "$HOME/.vim/colors"
-ln -sf "$PWD/themes/molokai.vim" "$HOME/.vim/colors/molokai.vim"
-
-#--------------------#
-# Download Scripts   #
-#--------------------#
-mkdir -p $HOME/Scripts/gists
-python $HOME/.dotfiles/confs/getgists.py
+ln -sf "$PWD/themes/gruvbox.vim" "$HOME/.vim/colors/gruvbox.vim"
 
 #--------------------#
 # Postinstall confs  #

@@ -1,6 +1,5 @@
 "Colors
-colorscheme molokai
-let g:rehash256=1
+colorscheme gruvbox
 syntax enable 
 "Spaces & Tabs"
 set backspace=indent,eol,start
