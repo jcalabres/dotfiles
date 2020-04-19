@@ -10,7 +10,7 @@ The installation is compatible in both, macOS and Linux.
 * vim
 * iTerm2
 * packages
-* macOS
+* configs
 
 # Installation
 
