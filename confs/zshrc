@@ -50,7 +50,7 @@ function gitignore() {
 
 function gitall(){
 	gita
-	gitc $1
+	gitc "$1"
 	gitp
 }
 
