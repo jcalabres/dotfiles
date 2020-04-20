@@ -37,6 +37,8 @@ if [ $os == "Darwin" ]; then
     defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
     # Specify the preferences directory
     defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dotfiles/confs/iterm2"
+	# Download and install custom font
+	cd ~/Library/Fonts && { curl -O 'https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20Medium%20for%20Powerline.otf' ; cd -; }
 fi 
 
 #--------------------#
@@ -52,3 +54,5 @@ ln -sf "$PWD/themes/gruvbox.vim" "$HOME/.vim/colors/gruvbox.vim"
 vim +PlugInstall +qall +so %
 # Set zsh default
 chsh -s /bin/zsh
+#Refresh ZSH
+source ~/.zshrc

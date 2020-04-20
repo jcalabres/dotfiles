@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo spctl --master-disable
+spctl --master-disable
 defaults write com.apple.finder CreateDesktop -bool false
 defaults write com.apple.screencapture location ~/Pictures/screenshots/
 defaults write com.apple.screencapture type -string "png"
