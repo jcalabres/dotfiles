@@ -1648,7 +1648,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>283 436 916 423 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1028 0 0 1680 1027 </string>
+	<string>0 1027 1680 1050 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>937 111 570 586 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2343,7 +2343,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGSNer-Regular 13</string>
+			<string>SourceCodeProForPowerline-Medium 13</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -3103,7 +3103,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGSNer-Regular 13</string>
+			<string>SourceCodeProForPowerline-Medium 13</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -3190,6 +3190,8 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>Menlo</string>
+		<string>Source Code Pro for Powerline</string>
 		<string>Hack</string>
 		<string>MesloLGS NF</string>
 	</array>
@@ -3211,7 +3213,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>F91A316E-46DC-40B6-B00F-A99C1BB48171</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>99</integer>
+	<integer>102</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -4000,7 +4002,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-18T16:44:44Z</date>
+	<date>2020-04-20T20:46:17Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>

@@ -1,3 +1,5 @@
 zsh
 vim
 git
+wget
+

@@ -38,7 +38,7 @@ if [ $os == "Darwin" ]; then
     # Specify the preferences directory
     defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dotfiles/confs/iterm2"
 	# Download and install custom font
-	cd ~/Library/Fonts && { curl -O 'https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20Medium%20for%20Powerline.otf' ; cd -; }
+	wget 'https://github.com/powerline/fonts/raw/master/SourceCodePro/Source%20Code%20Pro%20Medium%20for%20Powerline.otf' -P ~/Library/Fonts
 fi 
 
 #--------------------#
