@@ -2,6 +2,7 @@ export ANDROID_HOME="/Users/jcalabres/Library/Developer/Xamarin/android-sdk-maco
 export JAVA_HOME=$(/usr/libexec/java_home)
 export SCRIPTS="$HOME/Scripts"
 
+export PATH="/usr/local/sbin:$PATH"
 export PATH="${PATH}:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/29.0.2"
 export PATH="${PATH}:$SCRIPTS"
 
@@ -21,7 +22,7 @@ alias gitp="git push"
 alias upgrade="brew update && brew upgrade"
 alias server="python -m SimpleHTTPServer"
 alias remove="trash"
-alias emu="$ANDROID_HOME/tools/emulator"
+alias emu="$ANDROID_HOME/emulator/emulator"
 alias c="clear"
 
 #--------------------#
@@ -54,8 +55,8 @@ function gitall(){
 }
 
 function virtual(){
-	virtualenv $1
-	source $1/bin/activate
+	virtualenv .
+	source ./bin/activate
 }
 
 function grepr(){
