@@ -48,12 +48,6 @@ function gitignore() {
 	curl -L -s https://www.gitignore.io/api/$1 -o .gitignore;
 }
 
-function gitall(){
-	gita
-	gitc "$1"
-	gitp
-}
-
 function virtual(){
 	virtualenv .
 	source ./bin/activate
@@ -61,4 +55,10 @@ function virtual(){
 
 function grepr(){
 	grep -rin $1 .
+}
+
+function gitall(){
+	git add .
+	git commit -m "${1}"
+	git push
 }
