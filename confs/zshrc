@@ -54,7 +54,7 @@ function virtual(){
 }
 
 function grepr(){
-	grep -rin $1 .
+	grep -Erin "${1}" .
 }
 
 function gitall(){
