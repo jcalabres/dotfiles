@@ -1,4 +1,4 @@
-export ANDROID_HOME="/Users/jcalabres/Library/Developer/Xamarin/android-sdk-macosx"
+export ANDROID_HOME="/Users/jcalabres/Library/Android/sdk"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export SCRIPTS="$HOME/Scripts"
 
@@ -16,9 +16,6 @@ export LANG=en_US.UTF-8
 #--------------------#
 alias brews="brew leaves"
 alias findr="find . -name"
-alias gita="git add ."
-alias gitc="git commit -m"
-alias gitp="git push"
 alias upgrade="brew update && brew upgrade"
 alias server="python -m SimpleHTTPServer"
 alias remove="trash"
