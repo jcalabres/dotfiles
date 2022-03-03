@@ -16,7 +16,6 @@ alias brews="brew leaves"
 alias findr="find . -name"
 alias upgrade="brew update && brew upgrade"
 alias server="python -m SimpleHTTPServer"
-alias remove="trash"
 alias emu="$ANDROID_HOME/emulator/emulator"
 
 #--------------------#
