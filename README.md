@@ -1,4 +1,4 @@
-# Dotfiles
+# Instroduction
 
 My custom configurations for my environment.
 
