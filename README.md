@@ -2,16 +2,16 @@
 
 My custom configurations for my environment.
 
-The installation is compatible with macOS and Linux.
+The installation is compatible with **macOS** and **Linux**.
 
 # Features
 
 These dotfiles include configuration for the next utilities:
 
-* zsh
-* vim
-* iTerm2
-* guake
+* **zsh**
+* **vim**
+* **iTerm2**
+* **guake**
 
 # Installation
 
