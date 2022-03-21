@@ -1,4 +1,4 @@
-# Instroduction
+# Introduction
 
 My custom configurations for my environment.
 
