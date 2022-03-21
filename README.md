@@ -1,16 +1,17 @@
 # Dotfiles
 
-My custom configurations and environment.
+My custom configurations for my environment.
 
-The installation is compatible in both, macOS and Linux.
+The installation is compatible with macOS and Linux.
 
-# Configurations
+# Features
+
+These dotfiles include configuration for the next utilities:
 
 * zsh
 * vim
 * iTerm2
-* packages
-* configs
+* guake
 
 # Installation
 

@@ -39,6 +39,9 @@ if [ $os == "Darwin" ]; then
     defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dotfiles/confs/iterm2"
 	# Download and install custom font
 	wget 'https://github.com/powerline/fonts/raw/master/SourceCodePro/Source%20Code%20Pro%20Medium%20for%20Powerline.otf' -P ~/Library/Fonts
+else
+	wget 'https://github.com/powerline/fonts/raw/master/SourceCodePro/Source%20Code%20Pro%20Medium%20for%20Powerline.otf' -P ~/.fonts
+	guake --restore-preferences "$HOME/.dotfiles/confs/guake"
 fi 
 
 #--------------------#
